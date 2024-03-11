@@ -1,0 +1,25 @@
+#fx-storke {
+    -fx-stroke: #007fff;
+}
+
+.jfx-text-field {
+    -fx-prompt-text-fill: white;
+    -jfx-focus-color: #007fff;
+    -jfx-unfocus-color: #007fff;
+    -fx-text-inner-color: white;
+}
+
+.table-row-cell {
+    -fx-background: linear-gradient(white 0%, white 90%, #e0e0e0 90%);
+    -fx-selection-bar: linear-gradient(#95caff 0%, #77acff 90%, #e0e0e0 90%);
+}
+
+.table-row-cell {
+    -fx-text-background-color: red;
+    -fx-background: #2D89EFFF;
+}
+
+.table-row-cell {
+    -fx-text-background-color: Black;
+    -fx-background: #99A0A2;
+}

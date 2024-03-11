@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<StackPane xmlns:fx="http://javafx.com/fxml/1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+           minWidth="-Infinity" prefHeight="565.0" prefWidth="930.0"
+           stylesheets="@../css/LightTheme.css" xmlns="http://javafx.com/javafx/8.0.171"
+           fx:controller="org.sbsa.deco.controllers.AboutController">
+    <children>
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;"
+                    styleClass="glyph-icon-login">
+            <children>
+                <HBox alignment="CENTER" layoutX="274.0" layoutY="38.0" prefHeight="88.0" prefWidth="422.0"
+                      spacing="10.0" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="240.0"
+                      AnchorPane.topAnchor="38.0">
+                    <padding>
+                        <Insets bottom="20.0"/>
+                    </padding>
+                    <children>
+                        <ImageView fx:id="sbsabiglogo" blendMode="SRC_ATOP" cache="true" cacheHint="QUALITY"
+                                   depthTest="DISABLE" fitHeight="86.0" fitWidth="416.0" pickOnBounds="true"
+                                   preserveRatio="true" HBox.hgrow="ALWAYS">
+                            <image>
+                                <Image url="@../images/sbsa-logo.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER" layoutX="304.0" layoutY="202.0" prefHeight="183.0" prefWidth="260.0"
+                      spacing="10.0" AnchorPane.leftAnchor="304.0" AnchorPane.rightAnchor="366.0"
+                      AnchorPane.topAnchor="202.0">
+                    <padding>
+                        <Insets bottom="20.0"/>
+                    </padding>
+                    <children>
+                        <ImageView fx:id="idreicon" blendMode="SRC_ATOP" cache="true" cacheHint="QUALITY"
+                                   depthTest="DISABLE" fitHeight="160.0" fitWidth="200.0" pickOnBounds="true"
+                                   preserveRatio="true" visible="false">
+                            <image>
+                                <Image url="@../images/reicon.png"/>
+                            </image>
+                        </ImageView>
+                    </children>
+                </HBox>
+                <VBox layoutX="316.0" layoutY="399.0" prefHeight="80.0" prefWidth="235.0" spacing="10.0"
+                      AnchorPane.bottomAnchor="146.0" AnchorPane.leftAnchor="316.0" AnchorPane.rightAnchor="379.0">
+                    <children>
+                        <TextFlow layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308"
+                                  maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+                                  prefHeight="16.0" prefWidth="128.0" textAlignment="CENTER">
+                            <children>
+                                <Text fx:id="version" strokeType="OUTSIDE" strokeWidth="0.0" text="Version"
+                                      visible="false">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </TextFlow>
+                        <TextFlow maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="128.0"
+                                  textAlignment="CENTER">
+                            <children>
+                                <Text fx:id="developer" strokeType="OUTSIDE" strokeWidth="0.0"
+                                      text="Developpé par: SBSA Solutions" visible="false">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </TextFlow>
+                        <TextFlow maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308"
+                                  minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="128.0"
+                                  textAlignment="CENTER">
+                            <children>
+                                <Text fx:id="telephone" strokeType="OUTSIDE" strokeWidth="0.0" text="Tel: +21622605020"
+                                      visible="false" wrappingWidth="127.265625">
+                                    <font>
+                                        <Font name="System Bold Italic" size="14.0"/>
+                                    </font>
+                                </Text>
+                            </children>
+                        </TextFlow>
+                    </children>
+                </VBox>
+                <HBox alignment="CENTER" fillHeight="false" layoutX="256.0" layoutY="429.0" prefHeight="61.0"
+                      prefWidth="393.0" spacing="15.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="256.0"
+                      AnchorPane.rightAnchor="278.0">
+                    <children>
+                        <ImageView fx:id="sbsalogo" blendMode="SRC_ATOP" cache="true" cacheHint="QUALITY"
+                                   depthTest="DISABLE" fitHeight="43.0" fitWidth="266.0" pickOnBounds="true"
+                                   preserveRatio="true" visible="false" HBox.hgrow="ALWAYS">
+                            <image>
+                                <Image url="@../images/contact.png"/>
+                            </image>
+                        </ImageView>
+                        <Separator fx:id="separator" orientation="VERTICAL" prefHeight="50.0" prefWidth="5.0"
+                                   visible="false"/>
+
+                        <MaterialDesignIconView fx:id="facebook" glyphName="FACEBOOK" layoutX="324.0" layoutY="41.0"
+                                                size="25" visible="false"/>
+                        <MaterialDesignIconView fx:id="google" glyphName="GOOGLE" layoutX="307.0" layoutY="41.0"
+                                                size="25" visible="false"/>
+                        <MaterialDesignIconView fx:id="website" glyphName="LAUNCH" layoutX="255.0" layoutY="50.0"
+                                                size="25" visible="false"/>
+
+                    </children>
+                </HBox>
+
+
+            </children>
+        </AnchorPane>
+    </children>
+</StackPane>
